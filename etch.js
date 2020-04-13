@@ -45,7 +45,7 @@ function colorMode(e) {
     let colorstr = $(e.target).css("background-color");
     let startind = (colorstr.lastIndexOf(",") + 1);
     let curropc = parseFloat(colorstr.slice(startind));
-    let newopc = curropc + 0.1;
+    let newopc = curropc + 0.2;
     let newcolor = colorstr.slice(0, startind) + newopc + ")";
 
     $(e.target).css("background-color", newcolor);

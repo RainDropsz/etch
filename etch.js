@@ -73,6 +73,7 @@ $("#mkGrd").submit( function() {
 );
 
          //Event Listener for input=color change
+$("#colorChoice").on("click", () => mode = 0);
 $("#colorChoice").on("change",
   function() {
     mode = 0;

@@ -40,9 +40,9 @@ img {width: 3vh; height: inherit; margin-left: 2%; border: 1px solid gray;}
            width: 3vh; height: inherit; margin: 0 2%; border: 1px solid gray;}
 
 img:hover, #gradbtn:hover, #lblcolor:hover {opacity: .5;}
+
 footer {text-align:center;
-        color: #cccccc; display: block; margin-top: 2vh;}
-small {font-size: 1.5vh;}
+        color: #cccccc; display: block; margin-top: 14vh;}
 
 #circlerow {margin-top: -11.5vh;}
 #circle1, #circle2 {

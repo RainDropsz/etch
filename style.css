@@ -1,6 +1,6 @@
 *    {margin: 0; padding: 0; border: 0; }
 body {background-image: linear-gradient(to right, 
-      #330000, #000000, #000033); }
+      #550000, #000000, #000055);}
 
 header {font: italic bold 3vh "Indie Flower"; 
         text-align: center; color: #ffffff; display:block; }
@@ -44,14 +44,15 @@ footer {text-align:center;
         color: #cccccc; display: block; margin-top: 2vh;}
 small {font-size: 1.5vh;}
 
+#circlerow {margin-top: -11.5vh;}
 #circle1, #circle2 {
-  position: absolute; bottom: 7vh;
+  position: relative;
   width: 9vh; height: 9vh; 
   color: white; background-color: white;
   border-radius: 50%;
 }
-#circle1 { float: left;  left: 10%;}
-#circle2 { float: right; ; right: 10%;}
+#circle1 { margin-left: 10%; float: left;}
+#circle2 { margin-right: 10%; float: right; }
 
 a { text-decoration: none; color: inherit;}
 

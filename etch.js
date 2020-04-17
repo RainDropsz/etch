@@ -56,11 +56,8 @@ function colorMode(e) {
 // Helper Functions
 function addboxcss(nwide, nhght) {
          //calculate good percentages for screen size
-  var pxwide = (.9*window.innerWidth / nwide -2) ;
-  var pxhght = (.68*window.innerHeight / nhght -2) ;
-
-  var pctwide = pxwide /  window.innerWidth * 100 + "%";
-  var pcthght = pxhght /  window.innerHeight * 100 + "vh";
+  pctwide = 100 / nwide + "%";
+  pcthght = 65 / nhght + "vh"; 
 
   $(".boxTp1").css("width",  pctwide);
   $(".boxTp1").css("height", pcthght);
@@ -140,7 +137,7 @@ function convToRGBA(tmprgb)  {
       tmprgb.slice(3,tmprgb.length-1) + ", " + 0 + ")";
   }
   else {
-    tmprgb="rgba(255,255,255,0)";
+    tmprgb="rgba(0,0,0,0)";
   }
 
   // return "rgba(255,255,255,0)";
@@ -154,5 +151,3 @@ $("#mkGrd").submit(function(e) {
 
          // Build First Grid
 buildGrid(16,16);
-         // Add copyright year
-$("small").append("&copy;" + (new Date().getFullYear() ) + " RainDropsz");

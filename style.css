@@ -6,10 +6,12 @@ header {font: italic bold 3vh "Indie Flower";
         text-align: center; color: #ffffff; display:block; }
 section {height: 3vh; box-sizing: border-box; font-size: 2vh;}
 
-#grid1  {text-align: center; display:block; margin-top: 2vh;}
+#grid1  {text-align: center; display:block; margin: 2vh auto;
+         border: 5vh solid red; border-bottom: 10vh solid red; border-radius: 3vw; 
+         width: 80%; background-color: #bec2cb;}
 
-.boxTp1 {display: inline-block;
-         border: 1px solid #663355;} 
+.boxTp1 {display: inline-block; box-sizing: border-box;
+         border: 1px solid #aaaaaa;} 
 .boxTp1, #grid1, .gridrow {font-size: 0;}
 
 .left  {float:left;  }
@@ -27,13 +29,13 @@ input[type=submit]:hover {background-color: #888888;}
 input[type=text] {width: 60px; height: inherit; font-size: inherit; text-align: center;
            display: inline-block;}
 #lblcolor {width: 3vh; height: inherit; display: inline-block;
-           background-color: #aaddcc; margin-left: 3%; vertical-align: top;
+           background-color: #666666; margin-left: 3%; vertical-align: top;
            border: 1px solid gray;}
 input[type=color] {width: 100%; height: 100%; display: none;}
 
 img {width: 3vh; height: inherit; margin-left: 2%; border: 1px solid gray;}
 #gradbtn  {background-image: linear-gradient(
-                       to right, #555555, white);
+                       to right, white, black);
            box-sizing: border-box; 
            width: 3vh; height: inherit; margin: 0 2%; border: 1px solid gray;}
 
@@ -41,6 +43,17 @@ img:hover, #gradbtn:hover, #lblcolor:hover {opacity: .5;}
 footer {text-align:center;
         color: #cccccc; display: block; margin-top: 2vh;}
 small {font-size: 1.5vh;}
+
+#circle1, #circle2 {
+  position: absolute; bottom: 7vh;
+  width: 9vh; height: 9vh; 
+  color: white; background-color: white;
+  border-radius: 50%;
+}
+#circle1 { float: left;  left: 10%;}
+#circle2 { float: right; ; right: 10%;}
+
+a { text-decoration: none; color: inherit;}
 
 /* Chrome, Safari, Edge, Opera  hide arrows on number input*/
 input::-webkit-outer-spin-button,
